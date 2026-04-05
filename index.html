@@ -6,9 +6,11 @@
         display: flex;
         font-family: sans-serif;
         font-size: 18pt;
-        color: #ff5757;
+        color: 
+#ff5757;
         padding: 5px;
-        border: 1px solid #121212;
+        border: 1px solid 
+#121212;
         justify-content: left;
         line-height: 1.5;
         height:85%;
@@ -23,16 +25,9 @@
           font-size:12pt;
           font-weight: bold;
       }
-      #quote {
-          font-size: 8pt;
-          font-weight: normal;
-          color: #555;
-          margin-top: 4px;
-          font-style: italic;
-          letter-spacing: 0.02em;
-      }
       body{
-          background-color: #191919;
+          background-color: 
+#191919;
       }
     </style>
 </head>
@@ -51,11 +46,11 @@
     const monthNames = ["january", "february", "march", "april", "may", "june",
       "july", "august", "september", "october", "november", "december"
     ];
-    
+
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+    var date = ${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()};
     var greet;
     if (hrs < 12)
         greet = 'good morning.  ';
@@ -63,12 +58,11 @@
         greet = 'good afternoon. ';
     else if (hrs >= 17 && hrs <= 24)
         greet = 'good evening.  ';
-    document.getElementById('lbl').innerHTML = `
+    document.getElementById('lbl').innerHTML = 
         <div class="container">
-          <div id="date">${date}</div>
+          <div id="date"> ${date}</div>
           <div class="greeting">${greet}</div>
-          <div id="quote">time is what we want most, but what we use worst. — william penn</div>
         <div/>
-    `;
+    ;
 </script> 
 </html>
